@@ -1,0 +1,23 @@
+//============================================================================
+// Name        : String_Evolution.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "Organism.h"
+using namespace std;
+
+
+int main() {
+	srand(time(NULL));
+	Organism * a = new Organism("AGTCA");
+	Organism * b = a->reproduce(10);
+
+	for (int i = 0; i < 100; i ++) {
+
+	}
+	return 0;
+}

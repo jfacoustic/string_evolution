@@ -1,0 +1,28 @@
+17:27:50 **** Incremental Build of configuration Debug for project String_Evolution ****
+make all 
+Building file: ../src/Organism.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Organism.d" -MT"src/Organism.d" -o "src/Organism.o" "../src/Organism.cpp"
+Finished building: ../src/Organism.cpp
+ 
+Building file: ../src/Population.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Population.d" -MT"src/Population.d" -o "src/Population.o" "../src/Population.cpp"
+Finished building: ../src/Population.cpp
+ 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: libString_Evolution
+Invoking: Cross G++ Linker
+g++ -shared -o "libString_Evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+/usr/bin/ld: ./src/Organism.o: relocation R_X86_64_32S against `_ZTV8Organism' can not be used when making a shared object; recompile with -fPIC
+makefile:45: recipe for target 'libString_Evolution' failed
+./src/Organism.o: error adding symbols: Bad value
+collect2: error: ld returned 1 exit status
+make: *** [libString_Evolution] Error 1
+
+17:27:51 Build Finished (took 773ms)
+

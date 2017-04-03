@@ -1,0 +1,30 @@
+/*
+ * Organism.cpp
+ *
+ *  Created on: Apr 3, 2017
+ *      Author: joshua
+ */
+
+#include "Organism.h"
+
+char mutation(char c) {
+	return c;
+}
+
+Organism::Organism(std::string sequence) {
+	// TODO Auto-generated constructor stub
+	_sequence = sequence;
+}
+
+Organism::~Organism() {
+	// TODO Auto-generated destructor stub
+}
+
+Organism Organism::reproduce(double mutation_probability) {
+	// TODO Loop through the string, apply function that might mutate a character
+	std::string temp = "";
+	for (int i = 0; i < _sequence.size(); i++) {
+		temp[i] = mutation
+	}
+
+}

@@ -1,0 +1,18 @@
+15:46:51 **** Build of configuration Debug for project string_evolution ****
+make all 
+Building file: ../Population.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Population.d" -MT"Population.d" -o "Population.o" "../Population.cpp"
+Finished building: ../Population.cpp
+ 
+Building target: string_evolution
+Invoking: Cross G++ Linker
+g++  -o "string_evolution"  ./Population.o   
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+makefile:44: recipe for target 'string_evolution' failed
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [string_evolution] Error 1
+
+15:46:52 Build Finished (took 214ms)
+

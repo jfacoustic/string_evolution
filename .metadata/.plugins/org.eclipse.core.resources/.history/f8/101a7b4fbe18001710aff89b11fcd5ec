@@ -1,0 +1,18 @@
+//============================================================================
+// Name        : String_Evolution.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "Organism.h"
+using namespace std;
+
+int main() {
+	Organism test("ATGTC");
+	Organism * testChild = test.reproduce(50);
+	testChild->getSequence();
+	return 0;
+}

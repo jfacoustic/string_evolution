@@ -1,0 +1,20 @@
+/*
+ * Organism.h
+ *
+ *  Created on: Apr 3, 2017
+ *      Author: joshua
+ */
+
+#ifndef ORGANISM_H_
+#define ORGANISM_H_
+#include <String>
+class Organism {
+public:
+	Organism(std::string sequence);
+	virtual ~Organism();
+	Organism reproduce(double mutation_probability);
+private:
+	std::string _sequence;
+};
+
+#endif /* ORGANISM_H_ */

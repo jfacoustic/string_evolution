@@ -1,0 +1,17 @@
+/*
+ * Population.h
+ *
+ *  Created on: Apr 3, 2017
+ *      Author: joshua
+ */
+
+#ifndef POPULATION_H_
+#define POPULATION_H_
+
+class Population {
+public:
+	Population(int count, std::string name,);
+	virtual ~Population();
+};
+
+#endif /* POPULATION_H_ */

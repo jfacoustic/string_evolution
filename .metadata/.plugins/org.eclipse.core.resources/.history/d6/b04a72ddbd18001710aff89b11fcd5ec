@@ -1,0 +1,38 @@
+/*
+ * Organism.cpp
+ *
+ *  Created on: Apr 3, 2017
+ *      Author: joshua
+ */
+
+#include "Organism.h"
+
+std::string alphaNum = "AGTC";
+
+char mutation(char c, int mutation_probability) {
+	srand(time(0));
+	int r = rand() % 101;
+	char ctemp = '';
+	if (r <= mutation_probability) ctemp = alphaNum[rand() % alphaNum.size()];
+	else ctemp = c;
+	return ctemp;
+}
+
+Organism::Organism(std::string sequence) {
+	// TODO Auto-generated constructor stub
+	_sequence = sequence;
+}
+
+Organism::~Organism() {
+	// TODO Auto-generated destructor stub
+}
+
+Organism Organism::reproduce(int mutation_probability) {
+	// TODO Loop through the string, apply function that might mutate a character
+	std::string temp = "";
+	for (int i = 0; i < _sequence.size(); i++) {
+		temp += mutation(_sequence[i], mutation_probability);
+
+	}
+	return temp;
+}

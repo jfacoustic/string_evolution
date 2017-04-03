@@ -1,0 +1,25 @@
+to create a test lifeform -> start with:
+1) Initial number of chromosomes
+2) Initial base pairs per chromosome
+
+Need to choose asexual or sexual reproduction...
+
+Perhaps start with the string:
+"AGTAC"...
+
+Splits off into two cells.  Theoretically the same.
+There's a chance of adding a gene.
+Adding a chromosome.
+Changing the genes inside.
+
+So how would one do this?
+
+Have a chromosome object for the animal.
+
+Organism has _n_ chromosomes.
+Chromosomes have _m_ base pairs.
+
+There is a chance for each to mutate during cellular reproduction.  For _n_ chromosomes, there is a _p_ probability per chromosome to mutate.
+For _m_ base pairs, _q_ probability per base pair.
+
+Population object has so many organism objects.
