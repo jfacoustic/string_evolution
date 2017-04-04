@@ -1,19 +1,6 @@
-22:39:51 **** Incremental Build of configuration Debug for project str_evolution ****
+22:41:54 **** Incremental Build of configuration Debug for project str_evolution ****
 make all 
-Building file: ../src/String_Evolution.cpp
-Invoking: Cross G++ Compiler
-g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
-../src/String_Evolution.cpp: In function ‘int main()’:
-../src/String_Evolution.cpp:27:20: warning: ‘iter’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-  for (int i = 0; i < iter; i++) {
-                    ^
-Finished building: ../src/String_Evolution.cpp
- 
-Building target: str_evolution
-Invoking: Cross G++ Linker
-g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
-Finished building target: str_evolution
- 
+make: Nothing to be done for 'all'.
 
-22:39:51 Build Finished (took 374ms)
+22:41:54 Build Finished (took 78ms)
 
