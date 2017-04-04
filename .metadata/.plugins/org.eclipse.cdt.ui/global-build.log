@@ -439,3 +439,47 @@ make: Nothing to be done for 'all'.
 22:26:42 **** Incremental Build of configuration Debug for project str_evolution ****
 make all 
 make: Nothing to be done for 'all'.
+22:35:36 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/Population.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Population.d" -MT"src/Population.d" -o "src/Population.o" "../src/Population.cpp"
+../src/Population.cpp: In member function ‘void Population::killOrganism(int)’:
+../src/Population.cpp:37:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = id; i < _population.size() -1; i++) {
+                     ^
+../src/Population.cpp: In member function ‘void Population::iterate(int, int)’:
+../src/Population.cpp:55:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < _population.size(); i++) {
+                   ^
+../src/Population.cpp: In member function ‘void Population::printPopulation()’:
+../src/Population.cpp:71:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < _population.size(); i++) {
+                    ^
+Finished building: ../src/Population.cpp
+ 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:36:13 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:36:16 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.

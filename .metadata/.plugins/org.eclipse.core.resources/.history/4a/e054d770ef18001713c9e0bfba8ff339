@@ -8,7 +8,6 @@
 #ifndef POPULATION_H_
 #define POPULATION_H_
 #include <vector>
-#include <iostream>
 #include "Organism.h"
 class Population {
 public:
