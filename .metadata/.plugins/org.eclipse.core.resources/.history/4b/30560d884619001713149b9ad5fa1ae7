@@ -1,0 +1,37 @@
+//============================================================================
+// Name        : String_Evolution.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "Organism.h"
+#include "Population.h"
+using namespace std;
+
+
+int main() {
+	srand(time(NULL));
+	int mutateProb, birthProb, deathProb, iter;
+	string initSequence = "";
+	cout << "Enter probability for a mutation: ";
+	cin >> mutateProb;
+	cout << endl << "Enter probability for birth: ";
+	cin >> birthProb;
+	cout << endl << "Enter probability for death: ";
+	cin >> deathProb;
+	cout << endl << "Enter number of iterations: ";
+	cin >> iter;
+	cout << endl << "Enter initial sequence in A,T,C,G: ";
+	cin >> initSequence;
+	Population * test = new Population(mutateProb);
+	test->addOrganism(initSequence);
+	for (int i = 0; i < iter; i++) {
+		test->iterate(birthProb, deathProb);
+		test->printPopulation();
+
+	}
+	return 0;
+}

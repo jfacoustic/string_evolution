@@ -22,6 +22,7 @@ public:
 	std::vector< Organism * > copyPopulation();
 	void iterate(int birthChance, int deathChance);
 	void printPopulation();
+	int getAge();
 private:
 	unsigned int _count;
 	unsigned int _prob;
@@ -30,3 +31,4 @@ private:
 };
 
 #endif /* POPULATION_H_ */
+

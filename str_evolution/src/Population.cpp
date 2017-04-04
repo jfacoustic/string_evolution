@@ -72,3 +72,7 @@ void Population::printPopulation() {
 		std::cout << _population[i]->getSequence() << " age: " << _population[i]->getAge() << std::endl;
 	}
 }
+
+int Population::getAge() {
+	return _popAge;
+}
