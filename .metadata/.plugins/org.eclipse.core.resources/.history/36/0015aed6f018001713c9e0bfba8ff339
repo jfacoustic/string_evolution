@@ -22,7 +22,6 @@ int main() {
 	cout << endl << "Enter probability for death: ";
 	cin >> deathProb;
 	cout << endl << "Enter number of iterations: ";
-	cin >> iter;
 	Population * test = new Population(mutateProb);
 	test->addOrganism("AGTC");
 	for (int i = 0; i < iter; i++) {
