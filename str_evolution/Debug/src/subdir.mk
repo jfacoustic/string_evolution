@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/Community.cpp \
 ../src/Organism.cpp \
 ../src/Population.cpp \
 ../src/String_Evolution.cpp 
 
 OBJS += \
+./src/Community.o \
 ./src/Organism.o \
 ./src/Population.o \
 ./src/String_Evolution.o 
 
 CPP_DEPS += \
+./src/Community.d \
 ./src/Organism.d \
 ./src/Population.d \
 ./src/String_Evolution.d 

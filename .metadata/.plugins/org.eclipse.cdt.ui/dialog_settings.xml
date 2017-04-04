@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="python2.7" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
 	<section name="NewClassWizardPage">
 		<item value="true" key="stubSelected1"/>
 		<item value="true" key="stubVirtual1"/>

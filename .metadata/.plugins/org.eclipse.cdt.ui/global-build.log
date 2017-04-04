@@ -1,15 +1,75 @@
-11:49:51 **** Incremental Build of configuration Debug for project str_evolution ****
+13:45:39 **** Incremental Build of configuration Debug for project str_evolution ****
 make all 
-make: Nothing to be done for 'all'.
-11:49:54 **** Incremental Build of configuration Debug for project str_evolution ****
+Building file: ../src/Community.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Community.d" -MT"src/Community.d" -o "src/Community.o" "../src/Community.cpp"
+../src/Community.cpp: In member function ‘void Community::checkExtinction()’:
+../src/Community.cpp:25:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < _community.size(); i ++) {
+                    ^
+Finished building: ../src/Community.cpp
+ 
+Building file: ../src/Organism.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Organism.d" -MT"src/Organism.d" -o "src/Organism.o" "../src/Organism.cpp"
+Finished building: ../src/Organism.cpp
+ 
+Building file: ../src/Population.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Population.d" -MT"src/Population.d" -o "src/Population.o" "../src/Population.cpp"
+../src/Population.cpp: In member function ‘void Population::killOrganism(int)’:
+../src/Population.cpp:38:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = id; i < _population.size() -1; i++) {
+                     ^
+../src/Population.cpp: In member function ‘void Population::iterate(int, int)’:
+../src/Population.cpp:56:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < _population.size(); i++) {
+                   ^
+../src/Population.cpp: In member function ‘void Population::printPopulation()’:
+../src/Population.cpp:72:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < _population.size(); i++) {
+                    ^
+Finished building: ../src/Population.cpp
+ 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+../src/String_Evolution.cpp: In function ‘int main()’:
+../src/String_Evolution.cpp:34:47: error: no matching function for call to ‘Population::Population(int&)’
+  Population * test = new Population(mutateProb);
+                                               ^
+In file included from ../src/String_Evolution.cpp:11:0:
+../src/Population.h:15:2: note: candidate: Population::Population(int, std::__cxx11::string)
+  Population(int prob, std::string name);
+  ^
+../src/Population.h:15:2: note:   candidate expects 2 arguments, 1 provided
+../src/Population.h:13:7: note: candidate: Population::Population(const Population&)
+ class Population {
+       ^
+../src/Population.h:13:7: note:   no known conversion for argument 1 from ‘int’ to ‘const Population&’
+make: *** [src/String_Evolution.o] Error 1
+src/subdir.mk:27: recipe for target 'src/String_Evolution.o' failed
+13:46:22 **** Incremental Build of configuration Debug for project str_evolution ****
 make all 
-make: Nothing to be done for 'all'.
-11:50:21 **** Incremental Build of configuration Debug for project str_evolution ****
-make all 
-make: Nothing to be done for 'all'.
-11:50:29 **** Incremental Build of configuration Debug for project str_evolution ****
-make all 
-make: Nothing to be done for 'all'.
-11:53:00 **** Incremental Build of configuration Debug for project str_evolution ****
+Building file: ../src/Community.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Community.d" -MT"src/Community.d" -o "src/Community.o" "../src/Community.cpp"
+../src/Community.cpp: In member function ‘void Community::checkExtinction()’:
+../src/Community.cpp:29:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < _community.size(); i ++) {
+                    ^
+Finished building: ../src/Community.cpp
+ 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Community.o ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   -lpython2.7
+Finished building target: str_evolution
+ 
+13:47:01 **** Incremental Build of configuration Debug for project str_evolution ****
 make all 
 make: Nothing to be done for 'all'.

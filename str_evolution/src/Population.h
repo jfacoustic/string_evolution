@@ -12,7 +12,7 @@
 #include "Organism.h"
 class Population {
 public:
-	Population(int prob);
+	Population(int prob, std::string name);
 	void updateCount();
 	void addOrganism(std::string sequence);
 	void killOrganism(int id);
@@ -28,6 +28,7 @@ private:
 	unsigned int _prob;
 	std::vector < Organism * > _population;
 	unsigned int _popAge;
+	std::string _name;
 };
 
 #endif /* POPULATION_H_ */

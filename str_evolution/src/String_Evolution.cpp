@@ -10,10 +10,15 @@
 #include "Organism.h"
 #include "Population.h"
 #include "matplotlibcpp.h"
+#include "Community.h"
 using namespace std;
 
 namespace  plt = matplotlibcpp;
 int main() {
+
+	Community * a = new Community();
+	a->addSpecies(10, "AAAA", "Erpodo");
+
 	bool running = true;
 	srand(time(NULL));
 	int mutateProb, birthProb, deathProb, iter;
@@ -31,7 +36,7 @@ int main() {
 	vector<int>x;
 	vector<int>y;
 
-	Population * test = new Population(mutateProb);
+	Population * test = new Population(mutateProb, "blah");
 	test->addOrganism(initSequence);
 	while (running) {
 		for (int i = 0; i < iter; i++) {

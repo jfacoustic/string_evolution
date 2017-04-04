@@ -6,11 +6,12 @@
  */
 
 #include "Population.h"
-Population::Population( int prob ) {
+Population::Population( int prob, std::string name) {
 	// TODO Auto-generated constructor stub
 	_count = 0;
 	_popAge = 0;
 	_prob = prob;
+	_name = name;
 }
 
 Population::~Population() {
