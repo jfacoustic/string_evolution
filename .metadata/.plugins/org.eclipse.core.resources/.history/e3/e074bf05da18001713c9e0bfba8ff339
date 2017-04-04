@@ -1,0 +1,28 @@
+/*
+ * Population.cpp
+ *
+ *  Created on: Apr 3, 2017
+ *      Author: joshua
+ */
+
+#include "Population.h"
+
+Population::Population() {
+	// TODO Auto-generated constructor stub
+	_count = 0;
+	_name  = name;
+}
+
+Population::~Population() {
+	// TODO Auto-generated destructor stub
+}
+
+void Population::addOrganism(std::string sequence) {
+	_population.push_back(new Organism(sequence));
+}
+
+void Population::killOrganism(int id) {
+	Organism * temp = _population[id];
+	_population.erase(_population.begin() + id);
+	delete temp;
+}
