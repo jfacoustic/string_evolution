@@ -10,7 +10,6 @@
 Population::Population( int prob ) {
 	// TODO Auto-generated constructor stub
 	_count = 0;
-	_popAge = 0;
 	_prob = prob;
 }
 
@@ -50,19 +49,4 @@ int Population::getCount(){
 
 std::vector< Organism * > Population::copyPopulation() {
 	return _population;
-}
-
-void Population::iterate(int birthChance, int deathChance) {
-	for(int i = 0; i < _population.size(); i++) {
-		_population[i]->agePlusOne();
-		int birthRand = rand() % 101;
-		if ( birthRand <= birthChance )
-			reproduce(i);
-		int deathRand = rand() % 101;
-		if ( deathRand <= deathChance ) {
-			killOrganism(i);
-		}
-	}
-	_popAge++;
-
 }

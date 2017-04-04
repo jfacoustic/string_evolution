@@ -21,7 +21,6 @@ char mutation(char c, int mutation_probability) {
 Organism::Organism(std::string sequence) {
 	// TODO Auto-generated constructor stub
 	_sequence = sequence;
-	_age = 0;
 }
 
 Organism::~Organism() {
@@ -38,12 +37,4 @@ Organism * Organism::reproduce(int mutation_probability) {
 		temp += mutation(_sequence[i], mutation_probability);
 	}
 	return new Organism(temp);
-}
-
-int Organism::getAge() {
-	return _age;
-}
-
-void Organism::agePlusOne() {
-	_age++;
 }

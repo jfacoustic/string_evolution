@@ -19,7 +19,6 @@ public:
 	int getCount();
 	void reproduce(int id);
 	std::vector< Organism * > copyPopulation();
-	void iterate(int birthChance, int deathChance);
 private:
 	unsigned int _count;
 	unsigned int _prob;

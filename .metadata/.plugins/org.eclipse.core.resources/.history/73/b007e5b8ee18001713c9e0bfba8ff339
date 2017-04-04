@@ -29,8 +29,8 @@ int main() {
 	}
 	Population * test = new Population(10);
 	test->addOrganism("AGTC");
-	for (int i = 0; i < 10; i++) {
-		test->iterate(60, 30);
+	for (int i = 0; i < 1000; i++) {
+		test->iterate(70, 30);
 		cout << test->getCount() << endl;
 	}
 	return 0;

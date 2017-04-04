@@ -45,5 +45,5 @@ int Organism::getAge() {
 }
 
 void Organism::agePlusOne() {
-	_age++;
+
 }

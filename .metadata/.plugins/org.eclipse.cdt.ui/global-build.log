@@ -277,3 +277,165 @@ Invoking: Cross G++ Linker
 g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
 Finished building target: str_evolution
  
+22:23:58 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/Organism.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Organism.d" -MT"src/Organism.d" -o "src/Organism.o" "../src/Organism.cpp"
+Finished building: ../src/Organism.cpp
+ 
+Building file: ../src/Population.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Population.d" -MT"src/Population.d" -o "src/Population.o" "../src/Population.cpp"
+../src/Population.cpp: In member function ‘void Population::killOrganism(int)’:
+../src/Population.cpp:38:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = id; i < _population.size() -1; i++) {
+                     ^
+../src/Population.cpp: In member function ‘void Population::iterate(int, int)’:
+../src/Population.cpp:56:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < _population.size(); i++) {
+                   ^
+Finished building: ../src/Population.cpp
+ 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:24:17 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:24:24 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:24:45 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:25:27 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:25:34 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:25:44 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:25:50 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:25:53 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:25:54 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:25:55 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:13 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:26:15 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:17 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:19 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:27 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+Building file: ../src/String_Evolution.cpp
+Invoking: Cross G++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/String_Evolution.d" -MT"src/String_Evolution.d" -o "src/String_Evolution.o" "../src/String_Evolution.cpp"
+Finished building: ../src/String_Evolution.cpp
+ 
+Building target: str_evolution
+Invoking: Cross G++ Linker
+g++  -o "str_evolution"  ./src/Organism.o ./src/Population.o ./src/String_Evolution.o   
+Finished building target: str_evolution
+ 
+22:26:29 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:31 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:39 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:41 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:42 **** Incremental Build of configuration Debug for project str_evolution ****
+make all 
+make: Nothing to be done for 'all'.

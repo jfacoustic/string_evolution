@@ -19,7 +19,6 @@ public:
 	Organism * reproduce(int mutation_probability);
 	std::string getSequence();
 	int getAge();
-	void agePlusOne();
 
 private:
 	std::string _sequence;

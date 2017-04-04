@@ -43,7 +43,3 @@ Organism * Organism::reproduce(int mutation_probability) {
 int Organism::getAge() {
 	return _age;
 }
-
-void Organism::agePlusOne() {
-	_age++;
-}

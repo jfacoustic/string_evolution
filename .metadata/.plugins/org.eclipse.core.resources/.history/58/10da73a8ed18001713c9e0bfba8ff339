@@ -51,18 +51,3 @@ int Population::getCount(){
 std::vector< Organism * > Population::copyPopulation() {
 	return _population;
 }
-
-void Population::iterate(int birthChance, int deathChance) {
-	for(int i = 0; i < _population.size(); i++) {
-		_population[i]->agePlusOne();
-		int birthRand = rand() % 101;
-		if ( birthRand <= birthChance )
-			reproduce(i);
-		int deathRand = rand() % 101;
-		if ( deathRand <= deathChance ) {
-			killOrganism(i);
-		}
-	}
-	_popAge++;
-
-}

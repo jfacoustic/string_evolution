@@ -63,6 +63,5 @@ void Population::iterate(int birthChance, int deathChance) {
 			killOrganism(i);
 		}
 	}
-	_popAge++;
 
 }

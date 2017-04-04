@@ -18,12 +18,8 @@ public:
 	//Mutation probability is an integer out of 100.
 	Organism * reproduce(int mutation_probability);
 	std::string getSequence();
-	int getAge();
-	void agePlusOne();
-
 private:
 	std::string _sequence;
-	int _age;
 };
 
 #endif /* ORGANISM_H_ */
